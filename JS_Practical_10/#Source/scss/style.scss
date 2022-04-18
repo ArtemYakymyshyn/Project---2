@@ -1,0 +1,163 @@
+@import 'nullstyle.scss';
+
+
+a, p, button, input, div{
+   font-family: 'Oswald', sans-serif;
+}
+
+body{
+   background-color: black;
+}
+
+.wraper{
+   width: 100%;
+   height: 100%;
+   
+   .container{
+      max-width: 1600px;
+      height: 100%;
+      margin: 0px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 600px) {
+         min-width: 600px;
+         overflow-x: hidden;
+      }
+
+      .main-block{  
+         width: 95%;
+         height: 90%;
+         background-color: #778899;
+         border-radius: 15px;
+         .ml-wrk{
+            max-width: 100%;
+            height: 95%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            .ml-timeBlocks{
+               width: 90%;
+               height: 20%;
+               display: flex;
+               justify-content: space-between;
+               .ml-timeBlock{
+                  width: 20%;
+                  height: 70%;
+                  background-color: crimson;
+                  border-radius: 10px;
+                  display: flex;
+                  justify-content: space-around;
+                  align-items: center;
+                  flex-direction: column;
+                  & p:first-child{
+                     font-size: 36px;
+                     color: white;
+                     @media (max-width: 769px) {
+                        font-size: 30px;
+                        font-family: 'Oswald', sans-serif;
+                     }
+                     
+
+                  }
+                  & p:last-child{
+                     font-size: 26px;
+                     color: white;
+                     @media (max-width: 769px) {
+                        font-size: 20px;
+                        font-family: 'Oswald', sans-serif;
+                     }
+                     
+                  }
+               }
+
+            }
+            .ml-buttonBlock{
+               display: flex;
+               width: 96%;
+               justify-content: space-around;
+
+               & button{
+                  color: white;
+                  width: 18%;
+                  height: 70px;
+                  background-color: black;
+                  border-radius: 5px;
+                  font-size: 26px;
+                  transition-duration: 0.3s;
+                  @media (max-width: 769px) {
+                     font-size: 20px;
+                     font-family: 'Oswald', sans-serif;
+                  }
+                  
+                  &:hover{
+                     background-color: silver;
+                     color: crimson;
+                     width: 22%;
+
+                  }
+               }
+            }
+            .ml-resultsBlock{
+               width: 90%;
+               height: 250px;
+               border: 1px solid black;
+               background-color: white;
+               overflow-y: scroll;
+               position: relative;
+               .cycleRez{
+                  color: black;
+                  text-align: center;
+                  padding-top: 10px;
+                  font-size: 26px;
+                  @media (max-width: 769px) {
+                     font-size: 20px;
+                     font-family: 'Oswald', sans-serif;
+                  }
+                  
+               }
+               & button{
+                  width: 20%;
+                  height: 60px;
+                  background-color: black;
+                  color: white;
+                  transition-duration: 0.3s;
+                  font-size: 26px;
+                  position: absolute;
+                  top: 20px;
+                  right: 10px;
+                  @media (max-width: 769px) {
+                     font-size: 20px;
+                     font-family: 'Oswald', sans-serif;
+                  }
+                  
+                  &:hover{
+                     background-color: silver;
+                     color: crimson;
+                     
+                     width: 22%;
+                  }
+               }
+               
+               .ml-js-results{
+                  & p{
+                     padding-top: 10px;
+                     padding-left: 10px;
+                     font-size: 23px;
+                     color: black;
+                     
+                     @media (max-width: 769px) {
+                        font-size: 20px;
+                        font-family: 'Oswald', sans-serif;
+                        
+                     }
+                     
+                  }
+               }
+               
+            }
+         }
+      }
+   }
+}

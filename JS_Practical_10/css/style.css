@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+a, p, button, input, div {
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.wraper {
+  width: 100%;
+  height: 100%;
+}
+.wraper .container {
+  max-width: 1600px;
+  height: 100%;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 600px) {
+  .wraper .container {
+    min-width: 600px;
+    overflow-x: hidden;
+  }
+}
+.wraper .container .main-block {
+  width: 95%;
+  height: 90%;
+  background-color: #778899;
+  border-radius: 15px;
+}
+.wraper .container .main-block .ml-wrk {
+  max-width: 100%;
+  height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wraper .container .main-block .ml-wrk .ml-timeBlocks {
+  width: 90%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wraper .container .main-block .ml-wrk .ml-timeBlocks .ml-timeBlock {
+  width: 20%;
+  height: 70%;
+  background-color: crimson;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wraper .container .main-block .ml-wrk .ml-timeBlocks .ml-timeBlock p:first-child {
+  font-size: 36px;
+  color: white;
+}
+@media (max-width: 769px) {
+  .wraper .container .main-block .ml-wrk .ml-timeBlocks .ml-timeBlock p:first-child {
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+  }
+}
+.wraper .container .main-block .ml-wrk .ml-timeBlocks .ml-timeBlock p:last-child {
+  font-size: 26px;
+  color: white;
+}
+@media (max-width: 769px) {
+  .wraper .container .main-block .ml-wrk .ml-timeBlocks .ml-timeBlock p:last-child {
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+  }
+}
+.wraper .container .main-block .ml-wrk .ml-buttonBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 96%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.wraper .container .main-block .ml-wrk .ml-buttonBlock button {
+  color: white;
+  width: 18%;
+  height: 70px;
+  background-color: black;
+  border-radius: 5px;
+  font-size: 26px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+@media (max-width: 769px) {
+  .wraper .container .main-block .ml-wrk .ml-buttonBlock button {
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+  }
+}
+.wraper .container .main-block .ml-wrk .ml-buttonBlock button:hover {
+  background-color: silver;
+  color: crimson;
+  width: 22%;
+}
+.wraper .container .main-block .ml-wrk .ml-resultsBlock {
+  width: 90%;
+  height: 250px;
+  border: 1px solid black;
+  background-color: white;
+  overflow-y: scroll;
+  position: relative;
+}
+.wraper .container .main-block .ml-wrk .ml-resultsBlock .cycleRez {
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 26px;
+}
+@media (max-width: 769px) {
+  .wraper .container .main-block .ml-wrk .ml-resultsBlock .cycleRez {
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+  }
+}
+.wraper .container .main-block .ml-wrk .ml-resultsBlock button {
+  width: 20%;
+  height: 60px;
+  background-color: black;
+  color: white;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  font-size: 26px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+@media (max-width: 769px) {
+  .wraper .container .main-block .ml-wrk .ml-resultsBlock button {
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+  }
+}
+.wraper .container .main-block .ml-wrk .ml-resultsBlock button:hover {
+  background-color: silver;
+  color: crimson;
+  width: 22%;
+}
+.wraper .container .main-block .ml-wrk .ml-resultsBlock .ml-js-results p {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 23px;
+  color: black;
+}
+@media (max-width: 769px) {
+  .wraper .container .main-block .ml-wrk .ml-resultsBlock .ml-js-results p {
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+  }
+}
